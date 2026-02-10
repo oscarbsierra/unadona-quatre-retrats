@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reserva | Una dona, quatre retrats</title>
+    <link rel="icon" href="assets/Logo_A.webp" type="image/webp" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="topbar">
+      <div class="brand">
+        <a class="brand-link" href="index.html">
+          <img src="assets/Logo_A.webp" alt="Logo A" />
+          <div>
+            <div class="brand-title">Una dona, quatre retrats</div>
+            <div class="brand-sub">Experiència immersiva</div>
+          </div>
+        </a>
+      </div>
+      <nav class="nav">
+        <a href="index.html#experiencies">Experiències</a>
+        <a href="index.html#videos">Mostra immersiva</a>
+        <a href="reserva.html" class="btn ghost">Reserva</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section booking">
+        <div class="section-title">
+          <h2>Reserva la teva experiència</h2>
+          <p>Omple el formulari i et confirmarem la disponibilitat.</p>
+        </div>
+        <!-- LOCAL TESTING: redirect to gracies.html. For production with PHP, set action="enviar.php" method="post". -->
+        <form class="booking-form" action="gracies.html" method="get">
+          <label>
+            Nom i cognoms
+            <input type="text" name="nom" placeholder="Nom complet" required />
+          </label>
+          <label>
+            Correu electrònic
+            <input type="email" name="email" placeholder="email@exemple.cat" required />
+          </label>
+          <label>
+            Telèfon
+            <input type="tel" name="telefon" placeholder="XXX XXX XXX" />
+          </label>
+          <label>
+            Experiència
+            <select name="experiencia">
+              <option>Alia, la dona de les cavernes</option>
+              <option>Clara, la científica</option>
+            </select>
+          </label>
+          <label>
+            Franja horària
+            <select class="time-select" name="franja">
+              <option>16:00 - 16:30 ➤ disponible</option>
+              <option>16:30 - 17:00 ➤ disponible</option>
+              <option>17:00 - 17:30 ➤ disponible</option>
+              <option>17:30 - 18:00 ➤ disponible</option>
+              <option>18:00 - 18:30 ➤ disponible</option>
+              <option>18:30 - 19:00 ➤ disponible</option>
+              <option>19:00 - 19:30 ➤ disponible</option>
+              <option>19:30 - 20:00 ➤ disponible</option>
+            </select>
+          </label>
+          <label>
+            Data preferida
+            <input type="date" name="data" />
+          </label>
+          <label>
+            Nombre de persones
+            <input type="number" name="persones" min="1" max="4" value="2" />
+          </label>
+          <label class="wide">
+            Missatge
+            <textarea name="missatge" rows="4" placeholder="Explica'ns qualsevol detall"></textarea>
+          </label>
+          <button class="btn" type="submit">Enviar sol·licitud</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content footer-center">
+        <h4>Una dona, quatre retrats</h4>
+        <p>2026 Audivio Studios. Tots els drets reservats.</p>
+        <div class="footer-logos">
+          <img src="assets/logo_cultura.png" alt="Generalitat de Catalunya" />
+          <img src="assets/Logo_Audivio.webp" alt="Audivio" />
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

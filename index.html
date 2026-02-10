@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Una dona, quatre retrats</title>
+    <link rel="icon" href="assets/Logo_A.webp" type="image/webp" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="topbar">
+      <div class="brand">
+        <img src="assets/Logo_A.webp" alt="Logo A" />
+        <div>
+          <div class="brand-title">Una dona, quatre retrats</div>
+          <div class="brand-sub">Experiència immersiva</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#experiencies">Experiències</a>
+        <a href="#videos">Mostra immersiva</a>
+        <a href="reserva.html" class="btn ghost">Reserva</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-label="Obrir menú">
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <nav class="mobile-nav" hidden>
+      <a href="#experiencies">Experiències</a>
+      <a href="#videos">Mostra immersiva</a>
+      <a href="reserva.html" class="mobile-reserva">Reserva</a>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+          <h1>Una dona, <span class="title-break">quatre retrats</span></h1>
+          <p class="lead">
+            Una experiència immersiva per ser testimonis de les veus femenines que han
+            existit a través dels segles i que sovint han sigut invisibilitzades.
+          </p>
+          <div class="hero-actions">
+            <a class="btn ghost" href="#experiencies">Veure experiències</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="experiencies" class="section">
+        <div class="section-title">
+          <h2>Experiències immersives</h2>
+          <p>Dues peces per escoltar i veure allò que sovint no s'ha vist.</p>
+          <p class="section-note">
+            Alia i la científica ens conviden a mirar el món des de dues èpoques i dues
+            maneres de resistir: la memòria del foc i la llum del coneixement.
+          </p>
+        </div>
+        <div class="cards">
+          <article class="experience exp-alia">
+            <div class="exp-media">
+              <img src="assets/alia_silueta_final.png" alt="Alia, la dona de les cavernes" />
+            </div>
+            <div class="exp-content">
+              <h3>Alia, la dona de les cavernes</h3>
+              <p>Benvinguda.</p>
+              <p>
+                Soc l'Alia. Abans de les paraules escrites, abans dels llibres, abans que
+                el temps tingués nom.
+              </p>
+              <p>
+                Aquest espai que habito no és només una cova. És refugi, és memòria, és
+                pensament. Aquí, a les parets, no hi ha decoració: hi ha relat. Cada traç
+                explica qui som, què observem, què temem i què desitgem.
+              </p>
+              <p>
+                Durant molt de temps, aquestes mirades han quedat fora del relat oficial.
+                Les dones que van observar, decidir, transmetre i crear coneixement no van
+                desaparèixer: van ser silenciades.
+              </p>
+              <p>
+                Però el coneixement no s'esborra tan fàcilment. Resta a la pedra, a la
+                terra, al gest compartit.
+              </p>
+              <p class="exp-duration">Durada de l'experiència: 15 minuts</p>
+              <a class="btn small" href="reserva.html">Reserva aquesta experiència</a>
+            </div>
+          </article>
+
+          <article class="experience exp-clara">
+            <div class="exp-media">
+              <img src="assets/Clara_Silueta.png" alt="Clara, la científica" />
+            </div>
+            <div class="exp-content">
+              <h3>Clara, la científica</h3>
+              <p>Benvinguda.</p>
+              <p>
+                Em dic Clara. I aquest espai tancat, ple de llum artificial i silenci
+                controlat, també és un lloc de creació.
+              </p>
+              <p>
+                Els laboratoris han estat durant segles espais reservats. No per manca de
+                capacitat, sinó per absència d'accés. Moltes dones hi han treballat sense
+                nom, sense veu, sense reconeixement.
+              </p>
+              <p>
+                La ciència no neix només dels grans descobriments, sinó de la constància,
+                de l'error, de la mirada atenta. De preguntar-se una vegada i una altra
+                què hi ha darrere del que sembla evident.
+              </p>
+              <p>
+                Aquí no t'explicaré com funciona tot. Això ja ho trobaràs als llibres.
+              </p>
+              <p>
+                El que importa és entendre que el coneixement també té cos, temps i
+                història. I que ocupar aquest espai és, encara avui, un acte de
+                reivindicació.
+              </p>
+              <p class="exp-duration">Durada de l'experiència: 15 minuts</p>
+              <a class="btn small" href="reserva.html">Reserva aquesta experiència</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="videos" class="section video-showcase">
+        <div class="section-title">
+          <h2>Mostra immersiva</h2>
+        </div>
+        <div class="video-grid">
+          <div class="video-card">
+            <video controls poster="assets/Alia_Portada.png">
+              <source src="assets/Una dona,quatre retrats_VR.mp4" type="video/mp4" />
+            </video>
+            <h4>Alia, la dona de les cavernes</h4>
+          </div>
+          <div class="video-card">
+            <video controls poster="assets/Clara_Portada.png">
+              <source src="assets/Una dona, quatre retrats_CLARA.mp4" type="video/mp4" />
+            </video>
+            <h4>Clara, la científica</h4>
+          </div>
+        </div>
+      </section>
+
+      <section id="historia" class="section split">
+        <div class="split-media">
+          <img src="assets/Blender_Cave_MAPPING UV.png" alt="Mural de la cova" />
+          <div class="overlay"></div>
+        </div>
+        <div class="split-content">
+          <h2>Un relat per fer visibles les veus</h2>
+          <p>
+            Aquest recorregut neix de la voluntat de fer visibles veus que han estat
+            presents al llarg de la història, però que sovint no han tingut espai dins
+            del relat oficial. Veus que han observat, pensat, creat i transmès
+            coneixement, però que han quedat en segon pla o directament silenciades.
+          </p>
+          <p>
+            L'experiència proposa entrar dins aquests espais i escoltar-los des de dins.
+            No com a espectadors externs, sinó formant part del recorregut. A través de
+            la imatge, la veu i l'entorn immersiu, es construeix una narració que connecta
+            passat i present i permet entendre com s'ha transmès el coneixement i qui n'ha
+            quedat fora.
+          </p>
+          <p>
+            No busquem explicar-ho tot ni donar respostes tancades. El que proposem és
+            una vivència directa, accessible i clara, que permet observar, escoltar i
+            reflexionar des d'un altre lloc. Un recorregut per mirar la història amb una
+            altra perspectiva i reconèixer mirades que sempre hi han estat.
+          </p>
+          <p>Ara ets dins l'experiència. El relat continua amb tu.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content footer-center">
+        <h4>Una dona, quatre retrats</h4>
+        <p>2026 Audivio Studios. Tots els drets reservats.</p>
+        <div class="footer-logos">
+          <img src="assets/logo_cultura.png" alt="Generalitat de Catalunya" />
+          <img src="assets/Logo_Audivio.webp" alt="Audivio" />
+        </div>
+      </div>
+    </footer>
+
+    <div class="chatbot" aria-live="polite">
+      <button class="chatbot-toggle" type="button">
+        <img src="assets/cara alia.png" alt="Alia" />
+        Parla amb l'Alia
+      </button>
+      <div class="chatbot-panel" hidden>
+        <div class="chatbot-header">
+          <div>
+            <div class="chatbot-title">Alia</div>
+          </div>
+          <button class="chatbot-close" type="button">Tancar</button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages"></div>
+        <form class="chatbot-form" id="chatbot-form">
+          <input
+            type="text"
+            id="chatbot-input"
+            placeholder="Escriu una pregunta..."
+            autocomplete="off"
+            required
+          />
+          <button class="btn small" type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js?v=3"></script>
+  </body>
+</html>
