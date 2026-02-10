@@ -424,6 +424,11 @@ main {
   border-radius: 12px;
   display: block;
   margin-bottom: 12px;
+  transition: transform 0.2s ease;
+}
+
+.video-card:hover video {
+  transform: scale(1.03);
 }
 
 .video-card h4 {
