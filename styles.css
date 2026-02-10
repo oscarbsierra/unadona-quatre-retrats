@@ -417,6 +417,7 @@ main {
   border: 1px solid var(--stroke);
   border-radius: 18px;
   padding: 16px;
+  overflow: hidden;
 }
 
 .video-card video {
@@ -424,11 +425,13 @@ main {
   border-radius: 12px;
   display: block;
   margin-bottom: 12px;
-  transition: transform 0.2s ease;
+  transition: transform 0.25s ease;
+  transform-origin: center;
+  will-change: transform;
 }
 
 .video-card:hover video {
-  transform: scale(1.03);
+  transform: scale(1.06);
 }
 
 .video-card h4 {
